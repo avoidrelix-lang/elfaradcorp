@@ -29,6 +29,6 @@ function login() {
     return;
   }
 
-  const randomError = errors[Math.floor(Math.random() * errors.length)];
-  showPopup(randomError.code, randomError.text);
+  const err = errors[Math.floor(Math.random() * errors.length)];
+  showPopup(err.code, err.text);
 }
