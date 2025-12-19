@@ -9,6 +9,7 @@ body {
   margin: 0;
 }
 
+/* LOGIN */
 .login-box {
   border: 1px solid #333;
   padding: 30px;
@@ -50,7 +51,9 @@ button:hover {
 }
 
 .popup.hidden {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .popup-box {
@@ -68,6 +71,10 @@ button:hover {
   color: #b00000;
   margin-bottom: 10px;
   letter-spacing: 2px;
+}
+
+.popup-box p {
+  font-size: 14px;
 }
 
 .close-btn {
@@ -92,7 +99,7 @@ button:hover {
   100% { transform: translate(0); }
 }
 
-/* ARCHIVE SAYFASI */
+/* ARCHIVE */
 .archive {
   max-width: 600px;
   text-align: left;
