@@ -1,0 +1,44 @@
+body {
+  background: #000;
+  color: #ccc;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  text-align: center;
+  border: 1px solid #333;
+  padding: 30px;
+  width: 300px;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  background: #111;
+  border: 1px solid #333;
+  color: #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  background: #222;
+  border: 1px solid #444;
+  color: #ccc;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+}
+
+#error {
+  color: #900;
+  margin-top: 10px;
+  font-size: 12px;
+}
