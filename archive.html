@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>UNLISTED ARCHIVE</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<div class="login-box">
-  <h1>UNLISTED</h1>
-  <p>Bu alan kayıt dışıdır.</p>
+<script>
+  if (localStorage.getItem("access") !== "granted") {
+    window.location.href = "index.html";
+  }
+</script>
+
+<div class="archive">
+  <h1>UNLISTED ARCHIVE</h1>
+  <p>Bu alan kamuya açık değildir.</p>
 
   <pre>
-KAYIT 01
-Durum: TANIMSIZ
-Erişim: SINIRLI
+KAYIT ID: 03-UNLISTED
+DURUM: TANIMSIZ
+
+Bu kayıt,
+standart arşivleme sistemleri
+tarafından listelenmemiştir.
+
+Gözlem süresi:
+KAYIT DIŞI
+  </pre>
+
+  <pre>
+KAYIT ID: WA-ERR-001
+
+Bu kayıt,
+sistem tarafından hata olarak
+işaretlenmiştir.
+
+Ancak silinmemiştir.
+Silme talebi oluşturulmadı.
+  </pre>
+
+  <pre>
+KAYIT ID: OBS-NULL
+
+Gözlemci kimliği
+tespit edilemedi.
+
+Buna rağmen
+erişim gerçekleşti.
+  </pre>
+
+  <pre>
+KAYIT ID: TIME-DESYNC
+
+Zaman damgası
+uyumsuz.
+
+Bu kayıt,
+oluşturulmadan önce
+erişildi.
+  </pre>
+
+  <pre>
+Bu kayıtlar
+tam sürüm değildir.
+
+Bazı veriler kasıtlı olarak
+gizlenmiştir.
   </pre>
 </div>
 
