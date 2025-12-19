@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>UNLISTED ARCHIVE</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -11,18 +11,19 @@
   <h1>UNLISTED ARCHIVE</h1>
   <p>Erişim kısıtlıdır.</p>
 
-  <input id="user" type="text" placeholder="Kullanıcı adı" />
-  <input id="pass" type="password" placeholder="Şifre" />
+  <input id="user" type="text" placeholder="Kullanıcı adı">
+  <input id="pass" type="password" placeholder="Şifre">
 
-  <button onclick="login()">GİRİŞ</button>
+  <!-- TYPE BUTTON ÇOK ÖNEMLİ -->
+  <button type="button" onclick="login()">GİRİŞ</button>
 </div>
 
 <!-- POPUP -->
 <div id="popup" class="popup hidden">
   <div class="popup-box">
     <span class="close-btn" onclick="closePopup()">×</span>
-    <h2 id="popup-code">ERROR</h2>
-    <p id="popup-text">Sistem hatası</p>
+    <h2 id="popup-code"></h2>
+    <p id="popup-text"></p>
   </div>
 </div>
 
